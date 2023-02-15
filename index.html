@@ -53,14 +53,14 @@
                     <div class="rent my-7 grid grid-cols-4 w-3/4 g-0 mx-auto">
                         <p class="font-medium text-lg text-right mr-3">Save:
                         </p>
-                        <input class="bg-slate-300 rounded" type="text">
+                        <input id="input-savings" class="bg-slate-300 rounded" type="text">
                         <p class="font-medium text-lg max-w-max mx-5">%</p>
-                        <button
+                        <button id="save-btn"
                             class="font-medium text-lg rounded max-w-max mx-auto text-white px-5  bg-cyan-500 ">Save</button>
                     </div>
                     <div>
-                        <h2 class="font-medium text-lg">Saving Amount: 0</h2>
-                        <h2 class="font-medium text-lg">Remaining Banlance: 0</h2>
+                        <h2 class="font-medium text-lg">Saving Amount: <span id="total-savings">0</span></h2>
+                        <h2 class="font-medium text-lg">Remaining Banlance: <span id="final-balance">0</span></h2>
                     </div>
             </section>
         </main>

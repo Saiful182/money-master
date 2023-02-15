@@ -28,12 +28,22 @@ document.getElementById('claculate-btn').addEventListener('click', function () {
     const inputClothsExpences = convertInputFieldValue('clothes-expences');
     const currentExpences = inputClothsExpences + inputRentExpences + inputFoodExpences;
     const priviousExpences = convertInnerText('expences');
-
-
     const newExpences = (currentExpences + priviousExpences).toFixed(2);
-
     const newBalance = balanece - currentExpences;
-
     replaceValue(newExpences, 'expences');
     replaceValue(newBalance, 'balance');
+})
+
+document.getElementById('save-btn').addEventListener('click', function () {
+    const savingPercentage = convertInputFieldValue('input-savings');
+    const currentBalance = convertInnerText('balance');
+    const remainingBalance = convertInnerText('final-balance');
+    const savingsAmount = parseFloat(currentBalance * (savingPercentage / 100));
+    const priviousSavings = convertInnerText('total-savings');
+    const newSavings = savingsAmount + priviousSavings;
+    const newBalanace = currentBalance - savingsAmount;
+    const currentRemainingBalance = remainingBalance + newBalanace;
+    replaceValue(newSavings, 'total-savings');
+    replaceValue(currentRemainingBalance, 'final-balance');
+
 })
