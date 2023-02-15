@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/658abd9d4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Money Master</title>
+</head>
+
+<body>
+
+    <header>
+        <section class=" header-area my-10 ">
+            <h2 class=" font-bold text-4xl text-teal-400 max-w-max mx-auto">Money Master </h2>
+        </section>
+        <main>
+            <section class=" mt-20 content grid grid-cols-2 g-1">
+                <div class="w-9/12 mx-auto">
+                    <img class="max-h-max" src="image/money.jpg" alt="">
+                </div>
+                <div class="calculation-part text-center p-10">
+                    <h3 class="font-bold text-xl">Income</h3>
+                    <div class="rent my-3 grid grid-cols-2 w-3/4 g-0">
+                        <p class="font-medium text-lg text-right mr-3">Income:
+                        </p> <input id="income-field" class="  bg-slate-300 rounded" type="text">
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl">Expences</p>
+                        <div class="rent my-3 grid grid-cols-2 w-3/4 g-0">
+                            <p class="font-medium text-lg text-right mr-3">Food:
+                            </p>
+                            <input id="food-expences" class="  bg-slate-300 rounded" type="text">
+                        </div>
+                        <div class="rent my-3 grid grid-cols-2 w-3/4 g-0">
+                            <p class="font-medium text-lg text-right mr-3">Rent:
+                            </p> <input id="rent-expences" class="  bg-slate-300 rounded" type="text">
+                        </div>
+                        <div class="rent my-3 grid grid-cols-2 w-3/4 g-0">
+                            <p class="font-medium text-lg text-right mr-3">Clothes:
+                            </p> <input id="clothes-expences" class="  bg-slate-300 rounded" type="text">
+                        </div>
+                        <button id="claculate-btn"
+                            class="font-medium text-lg rounded text-white px-7 py-2 bg-cyan-500 my-3">Calculate</button>
+                    </div>
+                    <div>
+                        <h2 class="font-medium text-lg w-2/3 mx-auto">Total Expences: <span id="expences">0</span></h2>
+                        <h2 class="font-medium text-lg w-2/3 mx-auto">Balance: <span id="balance">0</span></h2>
+                    </div>
+                    <div class="rent my-7 grid grid-cols-4 w-3/4 g-0 mx-auto">
+                        <p class="font-medium text-lg text-right mr-3">Save:
+                        </p>
+                        <input class="bg-slate-300 rounded" type="text">
+                        <p class="font-medium text-lg max-w-max mx-5">%</p>
+                        <button
+                            class="font-medium text-lg rounded max-w-max mx-auto text-white px-5  bg-cyan-500 ">Save</button>
+                    </div>
+                    <div>
+                        <h2 class="font-medium text-lg">Saving Amount: 0</h2>
+                        <h2 class="font-medium text-lg">Remaining Banlance: 0</h2>
+                    </div>
+            </section>
+        </main>
+
+    </header>
+
+</body>
+<script src="JS/expenceCalculate.js"></script>
+
+</html>
